@@ -61,7 +61,7 @@ To retrieve information about a user, send a `GET` request to `/users` with the 
 
 - `phone`: the user's phone number.
 
-The header must contain a valid token in the `token` field. The token must belong to the user who is requesting the information, or the request will be denied. (Look at the [Tokens](#token-create) section for more information.)
+The header must contain a valid token in the `token` field. The token must belong to the user who is requesting the information, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 <h3>Update</h3>
 To update a user's information, send a `PUT` request to `/users` with the following body (JSON):
 
@@ -73,7 +73,7 @@ To update a user's information, send a `PUT` request to `/users` with the follow
     "password": "password"
 }
 ```
-The header must contain a valid token in the `token` field. The token must belong to the user who is updating the information, or the request will be denied. (Look at the [Tokens](#token-create) section for more information.)
+The header must contain a valid token in the `token` field. The token must belong to the user who is updating the information, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 
 The `phone` field is required and must be 10 digits long, this is to identify who to update. All other fields are optional, though at least one must be provided.
 
@@ -84,7 +84,7 @@ To delete a user, send a `DELETE` request to `/users` with the following query p
 
 - `phone`: the user's phone number.
 
-The header must contain a valid token in the `token` field. The token must belong to the user who is deleting the account, or the request will be denied. (Look at the [Tokens](#token-create) section for more information.)
+The header must contain a valid token in the `token` field. The token must belong to the user who is deleting the account, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 
 
 <h2>Tokens</h2>
@@ -159,7 +159,7 @@ To retrieve information about a check, send a `GET` request to `/checks` with th
 
 - `id`: the check id.
 
-The header must contain a valid token in the `token` field. The token must belong to the user that owns the check, or the request will be denied. (Look at the [Tokens](#token-create) section for more information.)
+The header must contain a valid token in the `token` field. The token must belong to the user that owns the check, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 
 <h3>Update</h3>
 
@@ -178,7 +178,7 @@ To update a check, send a `PUT` request to `/checks` with the following body (JS
 
 The `id` field is required and must be the id of the check to update. All other fields are optional, though at least one must be provided.
 
-The header must contain a valid token in the `token` field. The token must belong to the user that owns the check, or the request will be denied. (Look at the [Tokens](#token-create) section for more information.)
+The header must contain a valid token in the `token` field. The token must belong to the user that owns the check, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 
 <h3>Delete</h3>
 
@@ -186,7 +186,7 @@ To delete a check, send a `DELETE` request to `/checks` with the following query
 
 - `id`: the check id.
 
-The header must contain a valid token in the `token` field. The token must belong to the user that owns the check, or the request will be denied. (Look at the [Tokens](#token-create) section for more information.)
+The header must contain a valid token in the `token` field. The token must belong to the user that owns the check, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 
 
 ---
