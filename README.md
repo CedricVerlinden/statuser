@@ -63,6 +63,7 @@ To retrieve information about a user, send a `GET` request to `/users` with the 
 
 The header must contain a valid token in the `token` field. The token must belong to the user who is requesting the information, or the request will be denied. (Look at the [Tokens](#tokens-create) section for more information.)
 <h3>Update</h3>
+
 To update a user's information, send a `PUT` request to `/users` with the following body (JSON):
 
 ```json
