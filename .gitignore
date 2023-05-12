@@ -1,5 +1,9 @@
 .data/checks/*
 .data/tokens/*
 .data/users/*
+!.data/checks/.ignore
+!.data/tokens/.ignore
+!.data/users/.ignore
 
 .logs/*
+!.logs/.ignore
