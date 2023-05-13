@@ -17,6 +17,10 @@ This app is designed to help you monitor the availability of your favorite websi
 
 <h3>Front-end</h3>
 
+- Simple, intuitive user interface.
+- Easy account creation and management.
+- Ability to create, edit, and delete website status checks.
+
 ---
 
 <h1>Build</h1>
