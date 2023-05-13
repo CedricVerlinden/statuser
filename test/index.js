@@ -1,29 +1,11 @@
-const helpers = require('../lib/helpers');
-const assert = require('assert');
+process.env.NODE_ENV = 'testing';
 
 _app = {};
 
-_app.tests = {
-    'unit': {}
-};
+_app.tests = {};
 
-_app.tests.unit['helpers.getANumber should return a number'] = function (done) {
-    const val = helpers.getANumber();
-    assert.equal(typeof (val), 'number');
-    done();
-};
-
-_app.tests.unit['helpers.getANumber should return 1'] = function (done) {
-    const val = helpers.getANumber();
-    assert.equal(val, 1);
-    done();
-};
-
-_app.tests.unit['helpers.getANumber should return 2'] = function (done) {
-    const val = helpers.getANumber();
-    assert.equal(val, 2);
-    done();
-};
+_app.tests.unit = require('./unit');
+_app.tests.api = require('./api');
 
 _app.countTests = function () {
     let counter = 0;
@@ -84,7 +66,7 @@ _app.runTests = function () {
     }
 };
 
-_app.produceTestReport = function(limit, successes, errors) {
+_app.produceTestReport = function (limit, successes, errors) {
     console.log("")
     console.log("-------------------- BEGIN TEST REPORT --------------------")
     console.log("")
@@ -106,9 +88,10 @@ _app.produceTestReport = function(limit, successes, errors) {
         console.log("");
         console.log("----------- END TEST REPORT -----------")
     }
-    
+
     console.log("")
     console.log("--------------------- END TEST REPORT ---------------------")
+    process.exit();
 }
 
 _app.runTests();
