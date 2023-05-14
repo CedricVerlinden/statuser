@@ -199,12 +199,30 @@ The header must contain a valid token in the `token` field. The token must belon
 
 <h1>Contributing</h1>
 
-Contributing guidelines will be added as soon as the project is complete.
+Whether you find a bug, have a feature request, or want to submit code changes, please feel free to contribute. Here are some ways you can contribute:
 
-<h1>Credits</h1>
+- Report a bug by opening an issue
+- Discuss a feature request by opening an issue
+- Submit a pull request with code changes
+
+<h2>Getting Started</h2>
+
+1. Fork this repository
+2. Clone the forked repository to your local machine
+3. Create a new branch for your changes (`git checkout -b my-new-branch`)
+4. Make your changes and commit them (`git commit -am 'Add some feature'`)
+5. Push your changes to your forked repository (`git push origin my-new-branch`)
+6. Create a new pull request
+
+<h2>Code Style</h2>
+
+Please make sure to follow our code style guidelines. We use [Prettier](https://prettier.io/) for JavaScript files and the built-in VS Code HTML formatter for HTML files to ensure consistent and readable code.
+
+<h1>Contributors</h1>
 
 - [Cédric](https://github.com/CedricVerlinden) - Project Author
 
+If you contribute, we will add your name to this list (unless you prefer to remain anonymous).
 
 <h1>License</h1>
 
