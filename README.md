@@ -31,8 +31,9 @@ This app is designed to help you monitor the availability of your favorite websi
 
 <h2>Installation</h2>
 
-1. Clone the repository to your local machine: `git clone https://github.com/cedricverlinden/status-app.git`
-2. Run the app with `node index.js`. To run with debug messages:
+1. Fork this  repository at the top of the page
+2. Clone the repository to your local machine: `git clone https://github.com/<yourname>/status-app.git`
+3. Run the app with `node index.js`. To run with debug messages:
    1. Windows: `$env:NODE_DEBUG='server,workers'; node index.js`
    2. Unix: `NODE_DEBUG=server,workers node index.js`
 
