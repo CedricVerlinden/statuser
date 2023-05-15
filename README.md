@@ -1,4 +1,4 @@
-<h1>Status App</h1>
+<h1>Statuser</h1>
 
 This app is designed to help you monitor the availability of your favorite websites and ensure that they are up and running smoothly.
 
